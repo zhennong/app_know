@@ -17,6 +17,6 @@ namespace Home\Controller;
 class IndexController extends HomeController{
 
     public function Index(){
-       echo 11;
+        $this->display('index','/');
     }
 }
