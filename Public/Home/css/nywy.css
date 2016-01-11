@@ -1,4 +1,4 @@
-@charset "gb2312";
+@charset "utf-8";
 /* CSS Document */
 
 *{ padding:0; margin:0;}
@@ -394,7 +394,7 @@ textarea{ width:90%; margin:10px 10px 10px 10px; height:!important; height:80px;
 .class_viewport ul, .class_viewport li {display: block; margin: 0; padding: 0; list-style-type: none;}
 .class_tab li.normal{height: 40px; line-height: 40px; border-bottom: 1px solid #e0e0e0; border-right: 1px solid #e0e0e0; background: #f1efef; text-align: left;}
 .class_tab li.active a.class_bjl1{background: #fff; color: #f21c21; padding:0 0 0 22px; line-height:40px; height:40px;}
-.class_tab a{ display: block; height:40px; line-height:40px; text-decoration: none; font-family:"ËÎÌå"; font-size:12px; color: #252525;
+.class_tab a{ display: block; height:40px; line-height:40px; text-decoration: none; font-family:"å®‹ä½“"; font-size:12px; color: #252525;
              overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width:45px; padding-left:22px;}
 
 #myTab0_Content0{display:block}
@@ -473,23 +473,5 @@ textarea{ width:90%; margin:10px 10px 10px 10px; height:!important; height:80px;
 .pres_b{ border-top:1px solid #d9d8d8; line-height:32px; margin-top:10px;}
 .pres_txt{ padding:5px 10px; line-height:24px;}
 .pres_b a{ width:33%; display:block; float:left; text-align:center; border-right:1px solid #d9d8d8; cursor:pointer;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
