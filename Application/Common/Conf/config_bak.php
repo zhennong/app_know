@@ -50,4 +50,7 @@ return array(
     'DOCUMENT_MODEL_TYPE' => array(2 => '主题', 1 => '目录', 3 => '段落'),
     
     'URL_MODEL'             =>  2,
+    
+    'MAIN_WEN_URL' => 'http://www.dt50.cn/',
+    'MAIN_WAP_URL' => 'http://www.dt50.cn/wap/',
 );
