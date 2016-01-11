@@ -16,7 +16,7 @@ namespace Home\Controller;
 
 class IndexController extends HomeController{
 
-    public function Index(){
+    public function index(){
        echo 11;
     }
 }

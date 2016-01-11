@@ -5,7 +5,7 @@
  * @author Administrator
  */
 namespace Home\Controller;
-use Think;
+use Think\Controller;
 
 class HomeController extends Controller{
 
