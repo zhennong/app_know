@@ -17,10 +17,10 @@ namespace Home\Controller;
 class TestController extends HomeController{
 
     public function index(){
-       echo 11;
+       $this->display();
     }
     
-    public function test1($param) {
+    public function test1() {
         $this->display();
     }
 }
