@@ -8,5 +8,7 @@ namespace Home\Controller;
  * @author houpanqi
  */
 class MemberController extends HomeController{
-
+    public function index(){
+        
+    }
 }
