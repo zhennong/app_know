@@ -2,13 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>{:C('WEB_SITE_TITLE')}</title>
+	<title>{$typetitle} - {:C('WEB_SITE_TITLE')}</title>
     <link type="text/css" rel="stylesheet" href="__CSS__/nywy.css" />
 	<block name="head"></block>
 </head>
 <body>
-    <block name="header"></block>
     <div class="box">
+        <block name="header">
+            <div class="head">
+                <a href="#"><span><img src="__IMG__/return.png"></span></a>
+                <h3>{$typetitle}</h3>
+            </div>
+        </block>
 		<block name="body"></block>
 	    <block name="footer">
 	        <div class="foot">
