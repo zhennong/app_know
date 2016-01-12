@@ -48,6 +48,12 @@ return array(
 
     /* 文档模型配置 (文档模型核心配置，请勿更改) */
     'DOCUMENT_MODEL_TYPE' => array(2 => '主题', 1 => '目录', 3 => '段落'),
+    
+    /* 模板相关配置 */
+    'TMPL_PARSE_STRING' => array(
+        '__COMMON__' => __ROOT__ . '/Public/Common',
+    ),
+    
     /* 后台验证码开启 */
     'ADMIN_VALIDATE_CODE_ON' => 1,
     
