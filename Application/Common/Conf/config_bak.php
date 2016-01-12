@@ -29,8 +29,8 @@ return array(
     'USER_ADMINISTRATOR' => 1, //管理员用户ID
 
     /* URL配置 */
-    'URL_CASE_INSENSITIVE' => true, //默认false 表示URL区分大小写 true则表示不区分大小写
-    'URL_MODEL'            => 3, //URL模式
+    'URL_CASE_INSENSITIVE' => false, //默认false 表示URL区分大小写 true则表示不区分大小写
+    'URL_MODEL'            => 2, //URL模式
     'VAR_URL_PARAMS'       => '', // PATHINFO URL参数变量
     'URL_PATHINFO_DEPR'    => '/', //PATHINFO URL分割符
 
@@ -39,7 +39,7 @@ return array(
 
     /* 数据库配置 */
     'DB_TYPE'   => 'mysqli', // 数据库类型
-    'DB_HOST'   => '127.0.0.1', // 服务器地址
+    'DB_HOST'   => '192.168.0.15', // 服务器地址
     'DB_NAME'   => 'app_know', // 数据库名
     'DB_USER'   => 'root', // 用户名
     'DB_PWD'    => 'root',  // 密码
@@ -49,8 +49,9 @@ return array(
     /* 文档模型配置 (文档模型核心配置，请勿更改) */
     'DOCUMENT_MODEL_TYPE' => array(2 => '主题', 1 => '目录', 3 => '段落'),
     
-    'URL_MODEL'             =>  2,
-    
+    'WAP_DOMAIN_NAME' => 'know.dt50.cn',
+    'WAP_URL' => 'http://know.dt50.cn',
+    'WAP_IP_ADDRESS' => '192.168.0.15',
     'MAIN_WEN_URL' => 'http://www.dt50.cn/',
     'MAIN_WAP_URL' => 'http://www.dt50.cn/wap/',
 );

@@ -14,6 +14,6 @@
 
 define('UC_APP_ID', 1); //应用ID
 define('UC_API_TYPE', 'Model'); //可选值 Model / Service
-define('UC_AUTH_KEY', 'OHSAa]*6XM`e&s5#:{b/=1!?.|g[KIUD9Yk3GdxJ'); //加密KEY
-define('UC_DB_DSN', 'mysqli://root:root@'.C('DB_HOST').':3306/app_know'); // 数据库连接，使用Model方式调用API必须配置此项
-define('UC_TABLE_PREFIX', 'app_'); // 数据表前缀，使用Model方式调用API必须配置此项
+define('UC_AUTH_KEY', C('DATA_AUTH_KEY')); //加密KEY OHSAa]*6XM`e&s5#:{b/=1!?.|g[KIUD9Yk3GdxJ
+define('UC_DB_DSN', C('DB_TYPE').'://'.C('DB_USER').':'.C('DB_PWD').'@'.C('DB_HOST').':'.C('DB_PORT').'/'.C('DB_NAME')); // 数据库连接，使用Model方式调用API必须配置此项
+define('UC_TABLE_PREFIX', C('DB_PREFIX')); // 数据表前缀，使用Model方式调用API必须配置此项
