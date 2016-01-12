@@ -1,28 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>{:C('WEB_SITE_TITLE')}</title>
-    <link type="text/css" rel="stylesheet" href="__CSS__/nywy.css" />
-	<block name="head"></block>
+	<include file="Layout:head1" />
 </head>
 <body>
     <block name="header"></block>
     <div class="box">
 		<block name="body"></block>
-	    <block name="footer">
-	        <div class="foot">
-	            <div class="footer">
-	                <ul>
-	                    <a href="{:U('Home/Index/index')}"><li><img alt="首页" src="__IMG__/main.png"></li></a>
-	                    <a href="{:U('News/inforlist')}"><li><img src="__IMG__/infor.png"></li></a>
-	                    <a href="{:U('Answers/answers')}"><li><img src="__IMG__/answer_on.png"></li></a>
-	                    <a href="{:U('Search/search')}"><li><img src="__IMG__/found.png"></li></a>
-	                    <a href="{:U('Member/member')}"><li><img src="__IMG__/mine.png"></li></a>
-	                </ul>
-	            </div>
-	        </div>
-	    </block>
+	    
+        <include file="Layout:footer1" />
     </div>
 </body>
 </html>

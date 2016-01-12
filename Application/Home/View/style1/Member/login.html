@@ -1,0 +1,43 @@
+<extend name="Layout:ly2" />
+
+<block name="head">
+    <script>
+        $(function(){
+			var verifyimg = $(".verifyimg").attr("src");
+            $(".reloadverify").click(function(){
+                if( verifyimg.indexOf('?')>0){
+                    $(".verifyimg").attr("src", verifyimg+'&random='+Math.random());
+                }else{
+                    $(".verifyimg").attr("src", verifyimg.replace(/\?.*$/,'')+'?'+Math.random());
+                }
+            });
+		});
+    </script>
+</block>
+
+<block name="body">
+    <form class="form_top" method="post" action="__SELF__">
+        <div>
+            <input name="username" type="text"  class="login_txt" placeholder="请填写手机号码" />
+        </div>
+        <div>
+            <input name="password" type="password"  class="login_txt" placeholder="请填写密码" />
+        </div>
+        <div class="controls">
+            <input type="text" id="inputPassword" class="login_code" placeholder="请输入验证码"  errormsg="请填写5位验证码" nullmsg="请填写验证码" datatype="*5-5" name="verify">
+        </div>
+        <div class="control-group">
+            <label class="control-label"></label>
+            <div class="controls">
+                <img class="verifyimg reloadverify" alt="点击切换" src="{:U('verify')}" style="cursor:pointer;">
+            </div>
+            <div class="controls Validform_checktip text-warning"></div>
+        </div>
+        <button type="submit" class="login_btn">登录</button>
+    </form>
+
+    <div class="gest">
+        <a href="{:U('singup')}" class="gest_btn">注册农医问药</a>
+        <a href="{:U('resetPassword')}" class="gest_btn forget_btn">忘记密码?</a>
+    </div>
+</block>
